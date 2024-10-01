@@ -17,6 +17,7 @@ function Main() { // Определение главной функции
     motions.SetDistRollingAfterIntersectionMoveOut(20); // Установить дистанцию для прокатки на перекрёстке без торможения, чтобы не определять повторно линию
     motions.SetLineFollowLoopDt(10); // Установить dt для циклов регулирования при движении по линии
 
+    brick.printValue("V", brick.batteryInfo(BatteryProperty.Voltage), 1, 1);
     brick.printString("PRESS TO RUN", 6, 9);
     brick.printString("left btn to start Master mode", 8, 1);
     brick.printString("right btn to start Slave mode", 9, 1);
