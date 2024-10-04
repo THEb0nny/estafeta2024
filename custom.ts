@@ -1,3 +1,4 @@
+// Перечисление режимов робота
 const enum RobotState {
     None = -1,
     Master = 0,
