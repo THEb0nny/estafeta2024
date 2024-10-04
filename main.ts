@@ -34,6 +34,8 @@ function SetClawPosition(state: ClawState, hold: boolean, speed?: number, stalle
 }
 
 function Main() { // Определение главной функции
+    motors.mediumB.setRegulated(false);
+    motors.mediumC.setRegulated(false);
     chassis.setSeparatelyChassisMotors(motors.mediumB, motors.mediumC, true, false); // Установить моторы в шасси и установить свойства инверсии
     chassis.setWheelRadius(62.4, MeasurementUnit.Millimeters); // Установить радиус колёс в шасси
     chassis.setBaseLength(195, MeasurementUnit.Millimeters); // Расстояние между центрами колёс в мм
