@@ -5,6 +5,12 @@ const enum RobotState {
     Slave = 1
 }
 
+// Перечисление режимов захвата
+const enum ArmState {
+    Front = 0,
+    Behind = 1,
+}
+
 namespace custom {
 
     // Вспомогательная фунция ожидания нажатия кнопки
